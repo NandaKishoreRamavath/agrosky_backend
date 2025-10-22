@@ -1,7 +1,7 @@
 import express from "express";
 import faqRoutes from "./routes/faqRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
-import rateLimiter from "./middleware/rateLimiter.js";
+// import rateLimiter from "./middleware/rateLimiter.js";
 
 import { connectDB } from "./config/db.js";
 import dotenv from "dotenv";
@@ -18,7 +18,7 @@ app.use(cors(
     origin: "https://agrosky-frontend.onrender.com"
   }
 ));
-app.use(rateLimiter);
+// app.use(rateLimiter);
 
 
 
